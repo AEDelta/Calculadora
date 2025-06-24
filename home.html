@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Prevencar Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo da empresa -->
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo da Empresa" />
+        </div>
+
+        <h2>Prevencar Calculadora</h2>
+
+        <label for="servico">Tipo de Vistoria:</label>
+        <select id="servico">
+            <option value="compraSegura">Compra Segura Plus</option>
+            <option value="prevenScan">PrevenScan</option>
+        </select>
+
+        <label for="fipe">Valor FIPE do Veículo (R$):</label>
+        <input type="number" id="fipe" placeholder="Ex: 45000" min="0" step="0.01" />
+
+        <div class="botoes">
+            <button class="btn-calcular" onclick="calcular()">Calcular</button>
+            <button class="btn-limpar" type="button" onclick="limpar()">Limpar</button>
+        </div>
+
+        <div class="result" id="resultado" style="display:none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
