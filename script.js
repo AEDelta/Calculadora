@@ -41,7 +41,6 @@ function calcular() {
             Valor Base: ${valorBaseFormatado}<br>
             <strong>Total a Pagar: ${totalFormatado}</strong>
         ` : `
-            Porcentagem (${(porcentagem * 100).toFixed(2)}% sobre o valor total): ${totalFormatado}<br>
             <strong>Total a Pagar: ${totalFormatado}</strong>
         `}
     `;
